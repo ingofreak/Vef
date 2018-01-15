@@ -3,7 +3,7 @@ import os
 
 @route('/')
 def index():
-  return "Bottlepy virkar, alveg rosa gaman...<br><a href="www.vefsida-ingo.herokuapp.com/about">about</a><a href="www.vefsida-ingo.herokuapp.com/pic">pic</a><a href="www.vefsida-ingo.herokuapp.com/bio">bio</a>"
+  return "Bottlepy virkar, alveg rosa gaman...<a href="www.vefsida-ingo.herokuapp.com/about">about</a><a href="www.vefsida-ingo.herokuapp.com/pic">pic</a><a href="www.vefsida-ingo.herokuapp.com/bio">bio</a>"
 @route('/about')
 def about():
   return "þetta er about"
