@@ -1,4 +1,5 @@
 from bottle import *
+import os
 
 @route('/')
 def index():
@@ -42,8 +43,10 @@ def server_static(filename):
     return static_file(filename, root='myndir')
 
 
-if __name__== '__main__':
-    run()
+run(host='0.0.0.0', port=os.environ.get('PORT'))
+
+#if __name__== '__main__':
+#    run()
 
 #run(host='localhost', port=8080)
 #run()
