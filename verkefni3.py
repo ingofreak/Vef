@@ -1,4 +1,5 @@
 from bottle import *
+import os
 
 @route('/')
 def index():
@@ -23,8 +24,10 @@ def index(kt):
 def villa(error):
     return "<h2>Þessi síða er ekki til</h2>"
 
-if __name__== '__main__':
-    run()
+run(host='0.0.0.0', port=os.environ.get('PORT'))
+
+#if __name__== '__main__':
+ #   run()
 
 #run(host='localhost', port=8080)
 #run()
